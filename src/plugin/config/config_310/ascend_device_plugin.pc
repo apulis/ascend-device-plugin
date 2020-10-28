@@ -1,0 +1,9 @@
+#Package Information for pkg-config
+prefix=/home/wallace/samba/code/volcanosh/ascend-device-plugin/310driver
+libdriver=${prefix}/driver/lib64
+includedir=${prefix}/driver/kernel/inc/driver/
+Name: ascend_docker_plugin
+Description: Ascend device plugin
+Version: 0.0.1
+Libs: -L${libdriver}/    -ldrvdsmi_host
+Cflags: -I${includedir}
